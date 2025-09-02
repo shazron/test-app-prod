@@ -47,7 +47,7 @@ jobs:
           command: build
       - name: Deploy
         env:
-          DEPLOY_SERVICE_URL: ${{ secrets.DEPLOY_SERVICE_URL_STAGE }}
+          AIO_DEPLOY_SERVICE_URL: ${{ secrets.AIO_DEPLOY_SERVICE_URL_STAGE }}
           AIO_RUNTIME_NAMESPACE: ${{ secrets.AIO_RUNTIME_NAMESPACE_STAGE }}
           AIO_RUNTIME_AUTH: ${{ secrets.AIO_RUNTIME_AUTH_STAGE }}
           AIO_PROJECT_ID: ${{ secrets.AIO_PROJECT_ID_STAGE }}
