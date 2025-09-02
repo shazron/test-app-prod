@@ -60,3 +60,6 @@ jobs:
           os: ${{ matrix.os }}
           command: deploy
           noPublish: true
+          verbose: true
+          forceDeploy: true
+
