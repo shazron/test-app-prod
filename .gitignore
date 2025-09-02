@@ -10,7 +10,7 @@ dist
 
 # Config
 config.json
-.env*
+*.env*
 .aio
 
 # Adobe I/O console config
@@ -39,4 +39,4 @@ coverage
 
 # logs folder for aio-run-detached
 logs
-
+fetch-secrets.sh
