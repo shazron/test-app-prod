@@ -28,7 +28,7 @@ jobs:
           os: ${{ matrix.os }}
           version: 11.x.x
       - name: Auth
-        uses: adobe/aio-apps-action@7a75747
+        uses: adobe/aio-apps-action@7a757475dd837591ee06678ec85eff9263c7edb4
         with:
           os: ${{ matrix.os }}
           command: oauth_sts
@@ -41,7 +41,7 @@ jobs:
       - name: Build
         env:
           AIO_RUNTIME_NAMESPACE: ${{ secrets.AIO_RUNTIME_NAMESPACE_STAGE }}
-        uses: adobe/aio-apps-action@7a75747
+        uses: adobe/aio-apps-action@7a757475dd837591ee06678ec85eff9263c7edb4
         with:
           os: ${{ matrix.os }}
           command: build
@@ -55,7 +55,7 @@ jobs:
           AIO_PROJECT_WORKSPACE_ID: ${{ secrets.AIO_PROJECT_WORKSPACE_ID_STAGE }}
           AIO_PROJECT_WORKSPACE_NAME: ${{ secrets.AIO_PROJECT_WORKSPACE_NAME_STAGE }}
           AIO_PROJECT_WORKSPACE_DETAILS_SERVICES: ${{ secrets.AIO_PROJECT_WORKSPACE_DETAILS_SERVICES_STAGE }}
-        uses: adobe/aio-apps-action@7a75747
+        uses: adobe/aio-apps-action@7a757475dd837591ee06678ec85eff9263c7edb4
         with:
           os: ${{ matrix.os }}
           command: deploy
