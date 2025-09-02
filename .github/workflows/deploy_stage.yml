@@ -61,5 +61,4 @@ jobs:
           command: deploy
           noPublish: true
           verbose: true
-          forceDeploy: true
 
