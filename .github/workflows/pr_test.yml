@@ -24,7 +24,7 @@ jobs:
           os: ${{ matrix.os }}
           version: 11.x.x
       - name: Auth
-        uses: adobe/aio-apps-action@3.3.0
+        uses: adobe/aio-apps-action@4.0.0
         with:
           os: ${{ matrix.os }}
           command: oauth_sts
@@ -37,12 +37,12 @@ jobs:
       - name: Build
         env:
           AIO_RUNTIME_NAMESPACE: ${{ secrets.AIO_RUNTIME_NAMESPACE_STAGE }}
-        uses: adobe/aio-apps-action@3.3.0
+        uses: adobe/aio-apps-action@4.0.0
         with:
           os: ${{ matrix.os }}
           command: build
       - name: Test
-        uses: adobe/aio-apps-action@3.3.0
+        uses: adobe/aio-apps-action@4.0.0
         with:
           os: ${{ matrix.os }}
           command: test
